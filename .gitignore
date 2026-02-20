@@ -1,0 +1,5 @@
+node_modules/
+tmp/
+.expo/
+.env
+.env.example

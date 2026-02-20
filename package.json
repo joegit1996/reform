@@ -1,0 +1,22 @@
+{
+  "name": "reform",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "verify:workspace": "node scripts/verify-workspace.mjs",
+    "verify:schema": "node scripts/verify-schema.mjs",
+    "verify:all": "npm run verify:workspace && npm run verify:schema",
+    "mobile:start": "npm --workspace @reform/mobile run start",
+    "admin:start": "npm --workspace @reform/admin-web run dev",
+    "postinstall": "node scripts/fix-structured-clone.mjs"
+  },
+  "dependencies": {
+    "@ungap/structured-clone": "1.3.0",
+    "pg": "^8.18.0"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}

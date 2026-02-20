@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "Reform",
+    "slug": "reform",
+    "scheme": "reform",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "plugins": [
+      "expo-router",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
